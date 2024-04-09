@@ -5,12 +5,17 @@
 }
 body{
     height: 100vh;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
 button{
+    margin: 5px;
     background-color: #3882f6;
     color: #f9faf8;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
 /* styling for the header -hero banner */
 .header{
@@ -20,39 +25,52 @@ button{
     font-size: 18px;
     color: #e5e7eb;
     padding: 1rem;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .nav-links{
+   
     display: flex;
     justify-content: flex-end;
     gap: 8px;
+    padding: 10px;
+ 
 }
 
 li{
     list-style: none;
+    padding-right: 2rem;
 }
 .logo{
     margin-right: auto;
     font-size: 24px;
     color: #f9faf8;
+    padding-left: 1.5rem;
+
 }
 .hero{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .left-hero,
 .right-hero{ 
     width: 50%;
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
    
 }
 .left-hero h1{
     font-size: 48px;
     color: #f9faf8;
 }
-
+.img-hero{
+    width: 500px;
+    height: auto;
+}
 /* Styling for information section */
 
 
@@ -64,7 +82,7 @@ li{
 }
 
 .section-1{
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -78,7 +96,17 @@ li{
 .img-box{
     display: flex;
     padding: 1rem;
-    gap: 1rem;
+    gap: 2rem;
+    justify-content: center;
+    width: 80%;
+   
+}
+
+.img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+
 }
 /* Styling for Quote section  */
 
@@ -87,7 +115,22 @@ li{
     font-size: 36px;
     color: #1f2937;
     font-weight: lighter;
-    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+    padding: 3rem;
+}
+.section2-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+
+}
+.quote-author{
+    align-self: flex-end;
 }
 
 /* styling for call to action */
@@ -104,6 +147,7 @@ li{
     align-items: center;
     width: 80%;
     height: 30%;
+    border-radius: 5px;
   
 }
 
